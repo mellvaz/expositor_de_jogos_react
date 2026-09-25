@@ -1,16 +1,39 @@
-# React + Vite
+# 🎮 Catálogo de Jogos Clássicos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação web responsiva desenvolvida em React + Vite para exibição de uma galeria de jogos clássicos, utilizando navegação por busca dinâmica para cada título e estilização customizada com destaque visual neon.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tecnologias Utilizadas
 
-## React Compiler
+- **React.js** (Componentização, reutilização de props e mapas de renderização)
+- **Vite** (Ambiente de desenvolvimento rápido)
+- **JavaScript (ES6+)** (Estrutura de dados de jogos e navegação via `window.open`)
+- **CSS3 Modules** (CSS Grid responsivo, Flexbox, animações hover e sombras neon)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🎯 Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [x] Exibição de catálogo de jogos em layout de grelha responsiva (adaptável para desktop, tablet e mobile).
+- [x] Efeito visual de iluminação neon nas capas dos jogos.
+- [x] Animação suave de zoom ao passar o cursor sobre os cards.
+- [x] Redirecionamento automático para busca de mais detalhes sobre o jogo no Google com 1 clique ("Saiba mais").
+- [x] Organização modular com componentes React e CSS Modules.
+
+---
+
+## 💻 Como rodar o projeto localmente
+
+```bash
+# 1. Clone o repositório
+git clone (https://github.com/mellvaz/expositor_de_jogos_react.git)
+
+# 2. Entre na pasta do projeto
+cd catalogoDeJogos-react
+
+# 3. Instale as dependências
+npm install
+
+# 4. Inicie o servidor de desenvolvimento
+npm run dev
