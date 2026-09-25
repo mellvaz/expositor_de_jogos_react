@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #244238; /* Verde escuro do fundo na imagem */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* Grade Responsiva para os Jogos */
+.games-grid {
+  display: grid;
+  /* Cria 5 colunas no Desktop exatamente como na referência da professora */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+/* Adaptabilidade para Tablets */
+@media (max-width: 900px) {
+  .games-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Adaptabilidade para Celulares */
+@media (max-width: 600px) {
+  .games-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .games-grid {
+    grid-template-columns: 1fr;
+  }
+}
